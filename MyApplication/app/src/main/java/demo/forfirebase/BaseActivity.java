@@ -1,4 +1,4 @@
-package com.example.chetanpatil.demoforfirebase;
+package demo.forfirebase;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;

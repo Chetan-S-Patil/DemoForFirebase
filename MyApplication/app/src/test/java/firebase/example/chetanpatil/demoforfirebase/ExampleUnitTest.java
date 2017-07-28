@@ -1,4 +1,4 @@
-package com.example.chetanpatil.demoforfirebase;
+package firebase.example.chetanpatil.demoforfirebase;
 
 import org.junit.Test;
 
