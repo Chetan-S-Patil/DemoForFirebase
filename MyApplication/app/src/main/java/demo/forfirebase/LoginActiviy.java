@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 /**
  * Created by chetanpatil on 26/07/17.
  */
@@ -21,11 +23,25 @@ public class LoginActiviy extends AppCompatActivity {
 
         mContext = LoginActiviy.this;
 
+        FirebaseAuth.getInstance().signOut();
+
     }
 
     public void onSimpleLoginClick(View view) {
 
         startActivity(new Intent(mContext, SimpleLoginActivity.class));
+
+    }
+
+    public void onSocialLoginClick(View view) {
+
+        startActivity(new Intent(mContext, SocialLoginActivity.class));
+
+    }
+
+    public void onMobileLoginClick(View view) {
+
+        startActivity(new Intent(mContext, MobileLoginActivity.class));
 
     }
 }

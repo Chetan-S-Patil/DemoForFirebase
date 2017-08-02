@@ -64,6 +64,8 @@ public class SimpleLoginActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 Log.v(TAG, "task: "+task.toString());
+                Log.v(TAG, "task: "+task.isSuccessful());
+                Log.v(TAG, "task: "+task.getException());
 
                 if (task.isSuccessful()) {
 
@@ -96,6 +98,8 @@ public class SimpleLoginActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 Log.v(TAG, "task: "+task.toString());
+                Log.v(TAG, "task: "+task.isSuccessful());
+                Log.v(TAG, "task: "+task.getException());
 
                 if (task.isSuccessful()) {
 

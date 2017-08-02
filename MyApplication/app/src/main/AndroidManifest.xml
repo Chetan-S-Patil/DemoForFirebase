@@ -21,6 +21,8 @@
         </activity>
 
         <activity android:name=".SimpleLoginActivity"/>
+        <activity android:name=".SocialLoginActivity"/>
+        <activity android:name=".MobileLoginActivity"/>
     </application>
 
 </manifest>
